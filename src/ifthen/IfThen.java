@@ -8,8 +8,8 @@ public class IfThen {
         String strHt;
         String strWt;
 
-        strHt = JOptionPane.showInputDialog(null, "Please enter height");
-        strWt = JOptionPane.showInputDialog(null, "Please enter weight");
+        strHt = JOptionPane.showInputDialog(null, "Please enter height in meters");
+        strWt = JOptionPane.showInputDialog(null, "Please enter weight in kilograms");
 
         double ht;
         double wt;
@@ -20,10 +20,10 @@ public class IfThen {
 
         bmi = wt / (ht * ht);
 
-        System.out.println("Your BMI is " + bmi + "kg/m2");
+        JOptionPane.showMessageDialog(null, "Your BMI is " + bmi + " kg/m2");
         
         if(bmi>25){
-            System.out.println("At Risk");
+            JOptionPane.showMessageDialog(null, "You are at higher risk for Non-Communicable Diseases.");
         }
 
     }
